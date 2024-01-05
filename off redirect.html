@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage Operations</title>
+</head>
+<body>
+
+<button onclick="showLocalStorageData()">Show Local Storage Data</button>
+<button onclick="deleteLocalStorageData()">Delete Local Storage Data</button>
+
+<script>
+function showLocalStorageData() {
+  // Get all keys in local storage
+  var keys = Object.keys(localStorage);
+
+  if (keys.length > 0) {
+    // Display each key-value pair
+    for (var i = 0; i < keys.length; i++) {
+      var key = keys[i];
+      var value = localStorage.getItem(key);
+      alert("Key: " + key + "\nValue: " + value);
+    }
+  } else {
+    alert("Local storage is empty.");
+  }
+}
+
+function deleteLocalStorageData() {
+  // Clear all data in local storage
+  localStorage.clear();
+  alert("Local storage data deleted.");
+}
+</script>
+
+</body>
+</html>
