@@ -72,7 +72,7 @@ if (blackFillPercentage >= 45) {
   });
 
   // Change textContent to innerHTML afte show scratch complete 
-  scratchCardText.innerHTML = '<button id="claim-button" onclick="makePayment()">Direct Withdraw Money </button><p id="randomAmount"></p>';
+  scratchCardText.innerHTML = '<button id="claim-button" onclick="makePayment()">Make UPI Payment</button><p id="randomAmount"></p>';
 
   scratchCardImage.classList.add('animate');
   scratchCardCoverContainer.addEventListener('transitionend', () => {

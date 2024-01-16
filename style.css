@@ -79,7 +79,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #00AAFF; /* Choose a base color */
-background-image: url('Img/canva.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+background-image: url('img/canva.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
 background-size: cover; /* Adjust the size of the background image */
 
 
