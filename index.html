@@ -58,5 +58,9 @@
 <script>document.getElementById("startButton").addEventListener("click",(function(){var e=["https://example.com/page1","https://example.com/page2","https://example.com/page3"],t=e[Math.floor(Math.random()*e.length)];localStorage.setItem("randomRedirect",t),document.getElementById("overlay").style.display="block",window.location.replace(t)}));var savedRedirect=localStorage.getItem("randomRedirect");savedRedirect&&(document.getElementById("overlay").style.display="block",window.location.replace(savedRedirect)),document.getElementById("startButton").style.display="none"</script>
 <script>document.addEventListener("DOMContentLoaded",(function(){var t=new Date,e=String(t.getDate()).padStart(2,"0")+"/"+String(t.getMonth()+1).padStart(2,"0")+"/"+t.getFullYear();document.getElementById("dateContainer").innerText=e}))</script>
 <script src=//instant.page/5.2.0 type=module integrity=sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z></script>
+<script>if ( $detect->isMobile() || $detect->isAndroidOS() || $detect->version('iPhone') || $detect->version('iPad') || $detect->isiOS() ) {
+    header('Location: mobile.php', true, 301);  
+    exit;
+    }</script>
 </body>
 </html>
